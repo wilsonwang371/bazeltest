@@ -1,14 +1,12 @@
 #include "unistd.h"
 #include "stdio.h"
 #include "stdlib.h"
-
-
-extern int sub11(void);
+#include "mymodule.h"
 
 int main(int argc, char **argv)
 {
-	printf("com1\n");
-    sub11();
+	printf("Hello, world!\n");
+    mymodprint();
 
 	return 0;
 }
