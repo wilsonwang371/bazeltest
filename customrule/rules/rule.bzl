@@ -1,6 +1,8 @@
 
 def _impl(ctx):
-    file = ctx.actions.declare_file(ctx.label.name)
+    file = ctx.actions.declare_file(ctx.label.name) #when you declared a file, it needs to be 
+                                                    #generated from some where, in our case
+                                                    # it is the run_shell
     cmd = 'swig -Wall -o {1} -python {0}'.format(ctx.file.src.path,
                                                  file.path)
     ctx.actions.run_shell(command=cmd,
