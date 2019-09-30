@@ -1,0 +1,3 @@
+build:foo --platform_suffix=-foo
+
+build:bar --platform_suffix=-bar
