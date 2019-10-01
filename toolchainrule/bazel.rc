@@ -1,0 +1,4 @@
+build:clang --crosstool_top=//toolchainrule/toolchain:clang
+
+build:gcc --crosstool_top=//toolchainrule/toolchain:gcc
+

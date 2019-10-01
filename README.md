@@ -22,3 +22,9 @@ bazel build //configsetting:foobar --config=foo --verbose_failures --subcommands
 
 bazel build //configsetting:foobar --config=bar --verbose_failures --subcommands
 ```
+
+## Custom Toolchain
+
+```bash
+bazel build //toolchainrule:test --compiler=gcc --verbose_failures --subcommands
+```
