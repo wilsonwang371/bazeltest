@@ -1,5 +1,6 @@
 #we need to define the toolchain here which specified in bazel.rc
 
+#different cpu and compiler can have different toolchain assigned in toolchain suite
 cc_toolchain_suite(
     name="clang",
     toolchains={
