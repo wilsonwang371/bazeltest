@@ -48,7 +48,7 @@ def _clang_toolchain_config_impl(ctx):
         abi_libc_version = '',
         tool_paths = tool_paths,
         cxx_builtin_include_directories = [
-            '/usr/lib/',
+            '/usr/lib',
             '/usr/include',
         ],
     )
@@ -107,7 +107,7 @@ def _gcc_toolchain_config_impl(ctx):
         abi_libc_version = '',
         tool_paths = tool_paths,
         cxx_builtin_include_directories = [
-            '/usr/lib/',
+            '/usr/lib',
             '/usr/include',
         ],
     )
