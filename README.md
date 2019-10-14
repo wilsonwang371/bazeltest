@@ -26,5 +26,6 @@ bazel build //configsetting:foobar --config=bar --verbose_failures --subcommands
 ## Custom Toolchain
 
 ```bash
-bazel build //toolchainrule:test --compiler=gcc --verbose_failures --subcommands
+bazel build //toolchainrule:test --config=gcc --verbose_failures --subcommands
+bazel build //toolchainrule:test --config=clang --verbose_failures --subcommands
 ```
